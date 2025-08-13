@@ -33,7 +33,7 @@ jobs:
         run: java -cp src Main
       
       - name: Imprimir variable de entorno locales y de repositorio
-        run: echo Mi nombre es $NOMBRE y mi posición es $POSITION
+        run: echo "Mi nombre es $NOMBRE y mi posición es $POSITION"
 
         
         
