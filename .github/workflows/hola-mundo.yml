@@ -20,6 +20,9 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
+      - name: Imprimir Runner SO
+        run: echo "${{runner.os}}"
+
       - name: Compile Main.java
         run: javac src/Main.java
 
