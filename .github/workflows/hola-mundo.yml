@@ -10,7 +10,9 @@ env:
   POSITION: "Arquitecto DevSecOps y Cloud"
 
 jobs:
-  build:
+
+  primera-Etapa:
+
     runs-on: ubuntu-latest
 
     steps:
@@ -34,6 +36,19 @@ jobs:
       
       - name: Imprimir variable de entorno locales y de repositorio
         run: echo "Mi nombre es ${{vars.NOMBRE}} y mi posición es $POSITION, y mi password es ${{secrets.PASSWORD}}"
+
+      - name: Imprimir Msg Primera Etapa
+        run: echo "Primera Etapa"
+
+  segunda-Etapa:
+    
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Imprimir Msg Segunda Etapa
+        run: echo "Segunda Etapa"
+
 
         
         
